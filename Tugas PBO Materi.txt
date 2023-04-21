@@ -1,0 +1,39 @@
+1. Pemrograman fungsional adalah teknik yang menekankan pada evaluasi fungsi, yang sesuai dengan namanya dari fungsi penulisan yang menyediakan sumber logika utama dalam sebuah program. Konsep di balik pemrograman fungsional adalah agar fungsi menjadi stateless dan hanya mengandalkan input yang diberikan untuk menghasilkan output. Pemrograman fungsional adalah paradigma yang memperlakukan komputasi sebagai evaluasi fungsi matematika dan menghindari perubahan status dan data yang dapat berubah. Ini didasarkan pada konsep yang berbeda, termasuk fungsi murni, rekursi, fungsi orde tinggi, sistem tipe, dan transparansi referensial.
+
+Di sisi lain, pemrograman berorientasi objek adalah paradigma yang didasarkan pada konsep objek yang berisi struktur data dalam bidang yang dikenal sebagai atribut dan kode dalam bentuk prosedur, juga dikenal sebagai metode. Bahasa pemrograman berorientasi objek yang paling populer adalah berbasis kelas, yang berarti objek disajikan sebagai instance kelas. Fitur utama dari pemrograman berorientasi objek adalah abstraksi, pewarisan, polimorfisme, dan enkapsulasi.
+
+(Functional Programming)
+Kode tersebut adalah sebuah program Python yang mendefinisikan sebuah fungsi is_palindrome yang digunakan untuk mengecek apakah sebuah objek merupakan palindrome atau tidak. Program tersebut juga melakukan input objek dari pengguna dan menampilkan pesan apakah objek tersebut merupakan palindrome atau bukan.
+
+Fungsi is_palindrome mengambil satu parameter object yang merupakan objek yang ingin diperiksa apakah palindrome atau tidak. Pertama-tama, panjang objek dihitung dengan fungsi len() dan disimpan pada variabel n. Kemudian, inisialisasi variabel i dengan nilai 0 untuk digunakan pada perulangan while.
+
+Pada perulangan while, program membandingkan karakter objek pada posisi i dengan karakter pada posisi ke-n-i-1. Jika karakter-karakter tersebut tidak sama, variabel palindrome diubah menjadi False dan perulangan while berhenti. Jika perulangan while telah mencapai tengah objek atau variabel palindrome sudah diubah menjadi False, maka program akan mengembalikan nilai palindrome.
+
+Setelah fungsi is_palindrome didefinisikan, program meminta pengguna untuk memasukkan objek yang ingin diperiksa menggunakan fungsi input(). Kemudian, program memanggil fungsi is_palindrome dengan parameter objek yang dimasukkan pengguna dan menampilkan pesan apakah objek tersebut palindrome atau bukan. Jika is_palindrome mengembalikan nilai True, maka program akan menampilkan pesan "Objek merupakan palindrome". Jika is_palindrome mengembalikan nilai False, maka program akan menampilkan pesan "Objek bukan palindrome".
+
+(Program Object Oriented)
+Program di atas menggunakan class Buah sebagai blueprint untuk membuat objek buah. Setiap objek buah memiliki atribut nama, rasa, dan warna yang didefinisikan pada saat objek dibuat dengan metode __init__(). Selain itu, objek buah juga memiliki dua metode: deskripsi(), yang memberikan deskripsi tentang buah tersebut, dan dimakan(), yang memberikan pesan saat buah tersebut dimakan.
+
+Setelah mendefinisikan class Buah, kita membuat dua objek buah (buah1 dan buah2) dengan menggunakan class tersebut. Kemudian, kita memanggil metode deskripsi() dan dimakan() pada kedua objek buah untuk menguji program.
+
+2. contoh implementasi pemrograman OOP dalam kehidupan sehari-hari dapat kita lihat pada konsep-konsep berikut :
+a. inheritance (pohon keluarga)
+inheritance atau pewarisan merupakan cara untuk membuat kelas turunan yang memiliki fungsi serupa dengan induknya. Di dunia programming, kelas turunan sering disebut sebagai kelas anak atau subkelas (child class atau subclass). Sementara itu, kelas induk sering disebut dengan kelas orang tua atau kelas super (parent class atau superclass). Konsep inheritance mengadopsi sistem struktural atau hierarki bertingkat, seperti pada pohon keluarga.
+
+Untuk memvisualisasikannya, ambil contoh kakek dan ayah yang memiliki hubungan darah. Coba teliti lagi kemiripan antara mereka. Kakek bisa saja memiliki warna iris mata hijau yang diturunkan ke ayah. Namun, belum tentu seseorang dalam keluarga mewarisi sifat tersebut. Semakin jauh keturunan kakek di pohon keluarga tersebut, semakin jauh juga kemiripan yang diturunkan. di sini, kakek berperan sebagai super class. 
+
+b. Encapsulation (Pemilik Kos-kosan)
+Encapsulation atau pengkapsulan merupakan cara untuk membungkus sebuah informasi dengan memberikan batasan akses. Dari namanya saja, dapat disimpulkan bahwa fungsi utama encapsulation adalah untuk menjaga keamanan informasi. Namun, encapsulation juga berguna untuk modularitas kode. Modularitas yang dimaksud di sini adalah pembagian kode menjadi beberapa jenis berdasarkan aksesnya. Dengan itu, kode bisa dimodifikasi secara bebas karena tidak akan menyentuh kode sumber dan menyebabkan masalah secara keseluruhan. 
+
+Untuk memvisualisasikan encapsulation, bayangkan kita memiliki sebuah kos. Kos tersebut tentu memiliki banyak ruangan, mulai dari kamar tidur, gudang, garasi, ruang elektronik, dan sebagainya. Setiap ruangan kita sertai dengan kuncinya masing-masing. Sistem kunci tersebut yang kita sebut dengan encapsulation. Sebagai pemilik kos, kita tentu akan memberikan kunci kamar tidur untuk penyewa kos, namun tidak memberikan kunci gudang. Dengan kata lain, penyewa kos berhak untuk melakukan apa saja di dalam kamar tidur mereka, tetapi tidak bisa mengakses gudang. 
+
+c. Abstraction (Cara kerja komputer)
+Abstraction atau abstraksi merupakan konsep lanjutan dari polymorphism. Inti dari konsep ini adalah melakukan fungsi tanpa melihat proses berjalannya fungsi tersebut. Abstraction pada dasarnya menyembunyikan proses-proses di belakang layar dan hanya memperlihatkan proses-proses yang terlihat saja. 
+
+Untuk memvisualisasikan abstraction, coba lihat pada komputer (atau device modern lain). Untuk menggunakan komputer tersebut, caranya hanya memberikan input perintah dan tidak tahu proses di belakangnya. Proses tersebut akan dieksekusi secara “tersembunyi” di balik rumitnya sistem komputer dan komputer hanya akan memberikan outputnya saja. 
+
+d. Polymorphism (Sifat Diri)
+Polymorphism atau polimorfisme merupakan cara untuk memproses sebuah data atau informasi dalam beberapa bentuk. Konsep polymorphism menghasilkan dua metode unik pada pemrograman yaitu overloading (polymorphism statis) dan overriding (polymorphism dinamis).
+Untuk memvisualisasikan polymorphism, cobalah untuk melihat diri sendiri. Saat di sekolah, kita berperan sebagai siswa. Saat di restoran, kita berperan sebagai pelanggan. Saat di pesawat, kita berperan sebagai penumpang. Nah, di sini kelasnya tetap satu, yaitu diri kita sendiri. Namun, kita bisa memiliki beberapa bentuk (sifat) berdasarkan keadaan tertentu. 
+
+Dalam pemrograman, implementasi OOP ini dapat dipakai untuk membuat program pendaftaran mahasiswa baru, menghitung segitiga, menentukan sifat buah-buahan seperti contoh program pada soal nomor 1, dan lain sebagainya.
